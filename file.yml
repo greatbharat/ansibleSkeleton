@@ -1,0 +1,7 @@
+---
+# ansible-playbook file.yml
+
+- name: run tasks on all hosts
+  hosts: "*"
+  tasks:
+    - debug: var = ansible_host
